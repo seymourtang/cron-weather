@@ -1,4 +1,4 @@
-# weibosharefrombing-cron
-[![CI](https://github.com/seymourtang/weibosharefrombing-cron/actions/workflows/blank.yml/badge.svg)](https://github.com/seymourtang/weibosharefrombing-cron/actions/workflows/blank.yml)  
+# weiboShareBot
+[![CI](https://github.com/seymourtang/weiboShareBot/actions/workflows/cron.yml/badge.svg)](https://github.com/seymourtang/weiboShareBot/actions/workflows/cron.yml)  
 
-weibosharefrombing-cron Github Action
+weiboShareBot Github Action
