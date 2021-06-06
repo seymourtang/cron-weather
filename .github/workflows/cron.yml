@@ -34,5 +34,6 @@ jobs:
       run: go run -mod=vendor ./cmd/main.go --TOKEN=${{ secrets.WEIBO_TOKEN }} --SOURCE=${{ secrets.WEIBO_SOURCE }}
 
       # Runs a set of commands using the runners shell
-   # - name: Send Notification
-    #  run: curl --location --request POST 'https://hooks.slack.com/services/T0244CKS3GT/B02446CFYRY/${{ secrets.SLACK_SECRET }}' --header 'Content-Type: application/json' --data-raw '{ "text": "Success" }'
+    - name: Send Notification
+      run: |
+       curl -i -X POST -H "'Content-type':'application/json'" -d '{ "text": "Success" }' https://hooks.slack.com/services/T0244CKS3GT/B02446CFYRY/${{ secrets.SLACK_SECRET }}
