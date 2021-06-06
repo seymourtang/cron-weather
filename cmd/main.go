@@ -203,6 +203,7 @@ func main() {
 		Source      = flag.String("SOURCE", "", "the source url of appID")
 	)
 
+	flag.Parse()
 	if *AccessToken == "" {
 		log.Fatalln("TOKEN cannot be empty.")
 	}
@@ -211,7 +212,6 @@ func main() {
 		log.Fatalln("SOURCE cannot be empty.")
 	}
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
-	flag.Parse()
 
 	client := NewWeiboShareClient(*AccessToken, *Source)
 	if err := client.shareImageFromBing(); err != nil {
