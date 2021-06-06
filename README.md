@@ -1,2 +1,2 @@
-# cron-weather
-cron-weather Github Action
+# weibosharefrombing-cron
+weibosharefrombing-cronr Github Action
