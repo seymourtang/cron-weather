@@ -32,7 +32,7 @@ jobs:
 
       # Runs a single command using the runners shell
     - name: Run the task
-      run: go build -mod=mod ./cmd/main.go --TOKEN= ${{ secrets.WEIBO_TOKEN }} --SOURCE= ${{ secrets.WEIBO_SOURCE }}
+      run: go run -mod=mod ./cmd/main.go --TOKEN= ${{ secrets.WEIBO_TOKEN }} --SOURCE= ${{ secrets.WEIBO_SOURCE }}
 
       # Runs a set of commands using the runners shell
    # - name: Send Notification
