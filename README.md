@@ -1,2 +1,2 @@
 # weibosharefrombing-cron
-weibosharefrombing-cronr Github Action
+weibosharefrombing-cron Github Action
